@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Authenticate your Document</title>
+
+    <link type="text/css" rel="stylesheet" href="../../css/qrc-lib.min-4.3.1.css" />
+    <link type="text/css" rel="stylesheet" href="../../css/qrc-standalone.min-4.3.1.css" />
+
+    <script src="../../js/qrc-app.min-4.3.1.js"></script>
+</head>
+
+<body>
+
+    <header class="qrc-header">
+        <div class="qrc-header-container">
+            <div class="qrc-app-logo-wrap">
+                <div class="qrc-app-logo">
+                    <img src="../../img/appLogo.gif" alt="Authenticate your Document" />
+                </div>
+                <div class="qrc-app-logo-text">
+                    <span>Authenticate your <b>DOCUMENT</b></span>
+                </div>
+                <div class="qrc-app-logo-desc">
+                    <span>BUREAU VERITAS Certificate &amp; Report Authentication Service</span>
+                </div>
+            </div>
+            <div class="col-xs-3 text-right qrc-bv-logo">
+                <img src="../../img/bvLogo.png" alt="Bureau Veritas" />
+            </div>
+        </div>
+    </header>
+
+    <div class="qrc-content">
+        <div class="qrc-bg-cover">
+            <img id="background-image" src="../../img/background-v3/background_standalone.jpg" alt="Authenticate your Document" />
+        </div>
+
+        <div class="row qrc-code-container qrc-tracking-answer-active">
+            <div class="qrc-code-notification"></div>
+            <div class="qrc-boxes qrc-code-reader">
+                <div class="qrc-code-image qrc-box">
+                    <img src="../../img/qrCodeImage.png" alt="QR Code Image" />
+                </div>
+                <div class="text-center qrc-code-text-holder qrc-box">
+                    <form method="get" action="document.pdf">
+                        <h3>
+                            <input name="verify" type="submit" value="Click here to verify the document"
+                                   style="white-space:normal; vertical-align:bottom; overflow:visible;
+                                          font-size:1em; margin:0; padding:0; border:0;
+                                          background:none; cursor:pointer;">
+                        </h3>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-xs-12" style="display:none">
+                <div id="qrc-pdf-holder" class="qrc-pdf-holder"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="qrc-footer">
+        <div class="qrc-footer-container">
+            <div class="row qrc-footer-left"></div>
+            <div class="qrc-footer-right">
+                <div class="qrc-bv-footer-logo">
+                    <img src="../../img/bvFooterLogo.png" alt="Bureau Veritas" />
+                </div>
+                <div class="qrc-bv-footer-tagline">
+                    Shaping a World of Trust
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

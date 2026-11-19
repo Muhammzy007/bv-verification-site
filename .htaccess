@@ -1,0 +1,8 @@
+# Auto-serve index.html for directory requests
+DirectoryIndex index.html
+
+# Force PDF download
+<FilesMatch "\.pdf$">
+    ForceType application/octet-stream
+    Header set Content-Disposition attachment
+</FilesMatch>
